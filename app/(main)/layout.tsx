@@ -1,23 +1,19 @@
-import { Navbar } from "./_components/navbar"
-import { Sidebar } from "./_components/sidebar"
-
-
+import { Navbar } from "./_components/navbar";
+import { Sidebar } from "./_components/sidebar";
 
 export default function MainLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode
+	children: React.ReactNode;
 }) {
-  return (
-    <div className='h-full flex'>
-      <Sidebar />
-      <Navbar />
-        <main className="flex-1 h-full overflow-auto">
-          y
+	return (
+		<div className="h-full flex">
+			<Sidebar />
+			<main className="flex-1 h-full overflow-auto">
+				<Navbar />
 
-        {children}
-        </main>
-        
-    </div>
-  )
+				{children}
+			</main>
+		</div>
+	);
 }

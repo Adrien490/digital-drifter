@@ -12,7 +12,7 @@ export const Navbar = () => {
   return (
     <nav className="w-full px-4 h-[64px] border-b">
       <div className="h-full flex justify-between items-center">
-        <Logo />
+        <div></div>
         <div className="flex gap-4 items-center">
           <Link href="">
             <Button className="border-b" variant="ghost">
@@ -27,6 +27,7 @@ export const Navbar = () => {
             </Button>
           </Link>
           <ModeToggle />
+          <Button>Share</Button>
         </div>
       </div>
     </nav>
